@@ -1,10 +1,18 @@
 var app = angular.module('busyNews', ['ui.router']);
 
-app.factory('posts', [function(){
+app.factory('posts', ['$http',function($http){
   // service body
   var o = {
-    posts: [{title: 'post 1', upvotes: 5}]
+    posts: [{title: 'post 1', upvotes: 6}]
   };
+  o.getAll = function() {
+    return $http.get('/posts').success(function(data){
+        console.log(data);
+      angular.copy(data, o.posts);
+    });
+  };
+  //console.log(o);
+  o.getAll();
   return o;
 }]);
 
