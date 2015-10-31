@@ -6,13 +6,19 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "~3.4.8",
+    "express": "~4.13.3",
     "static-favicon": "~1.0.0",
-    "morgan": "~1.0.0",
+    "morgan": "~1.0.1",
     "cookie-parser": "~1.0.1",
-    "body-parser": "~1.0.0",
+    "body-parser": "~1.0.2",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
-    "mongoose": "~4.2.2"
+    "mongoose": "~4.2.2",
+    "method-override": "~2.3.5",
+    "serve-favicon": "~2.3.0",
+    "express-session": "~1.12.1",
+    "errorhandler": "~1.4.2",
+    "multer": "~1.1.0",
+    "jade": "~1.11.0"
   }
 }
